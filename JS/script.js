@@ -1,7 +1,10 @@
+// Máscara para o campo de telefone
 $("#telefone").mask("(99) 9999-99999");
 
-var alunos = []; // Array para armazenar os alunos
+// Array para armazenar os alunos
+var alunos = [];
 
+// Função para salvar um novo aluno
 function save() {
     var aluno = {
         id: alunos.length + 1, // Definindo um ID único para cada aluno
@@ -14,28 +17,21 @@ function save() {
 
     alunos.push(aluno); // Adicionando o aluno ao array
 
-    addNewRow(aluno); // Chamando a função para adicionar uma nova linha na tabela
+    addNewRow(aluno); // Adicionando uma nova linha na tabela de alunos
 
     document.getElementById('formAlunos').reset(); // Resetando o formulário após salvar
 }
 
+// Função para adicionar uma nova linha na tabela de alunos
 function addNewRow(aluno) {
-    var table = document.getElementById('alunosTable');
-    var newRow = table.insertRow();
-
-    // Criando as células para cada atributo do aluno
-    var cellId = newRow.insertCell();
-    var cellNome = newRow.insertCell();
-    var cellEmail = newRow.insertCell();
-    var cellTel = newRow.insertCell();
-    var cellCurso = newRow.insertCell();
-    var cellTurno = newRow.insertCell();
+    var tableBody = document.getElementById('alunosTableBody');
+    var newRow = tableBody.insertRow();
 
     // Preenchendo as células com os valores do aluno
-    cellId.textContent = aluno.id;
-    cellNome.textContent = aluno.nome;
-    cellEmail.textContent = aluno.email;
-    cellTel.textContent = aluno.tel;
-    cellCurso.textContent = aluno.curso;
-    cellTurno.textContent = aluno.turno;
+    newRow.insertCell().textContent = aluno.id;
+    newRow.insertCell().textContent = aluno.nome;
+    newRow.insertCell().textContent = aluno.email;
+    newRow.insertCell().textContent = aluno.tel;
+    newRow.insertCell().textContent = aluno.curso;
+    newRow.insertCell().textContent = aluno.turno;
 }
