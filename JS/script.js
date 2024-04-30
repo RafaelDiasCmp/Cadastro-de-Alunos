@@ -1,3 +1,5 @@
+$("#telefone").mask("(99) 9999-99999");
+
 var alunos = []; // Array para armazenar os alunos
 
 function save() {
