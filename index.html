@@ -17,13 +17,13 @@
     </header>
 
     <main class="container-fluid col-11">
-        <section class="container-fluid mt-3">
+        <section class="container-fluid col-11 mt-4 text-center">
             <!-- Título Section 1 -->
-            <div class="display-5 ms-3">
+            <div class="display-5 text-start ms-3 mb-3">
                 Formulário de Cadastro:
             </div>
             <!-- Nome -->
-            <form class="container-fluid col-11 mt-4 text-center">
+            <form onsubmit="save(); return false;" id="formAlunos">
                 <div class="mb-3 row align-items-center">
                     <label for="nome" class="col-md-1 col-form-label">Nome:</label>
                     <div class="col-7">
@@ -87,7 +87,7 @@
                 </fieldset>
 
                 <div class="d-grid gap-2 col-6 mx-auto">
-                    <button type="submit" class="btn btn-primary">Enviar</button>
+                    <button type="submit" class="btn btn-primary">Cadastrar</button>
                 </div>
             </form>
         </section>
@@ -96,12 +96,12 @@
 
 
         <div>
-            <section class="container-fluid">
+            <section class="container-fluid col-12">
                 <!-- Título Section 2 -->
                 <div class="display-5 mt-3 ms-4">
                     Alunos Cadastrados:
                 </div>
-                <table class="table text-center mt-3">
+                <table class="table text-center mt-3" id="alunosTable">
                     <thead>
                         <tr>
                             <th scope="col">#</th>
@@ -113,33 +113,7 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                            <td>Mark</td>
-                            <td>Otto</td>
 
-                        </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                            <td>Mark</td>
-                            <td>Otto</td>
-
-                        </tr>
-                        <tr>
-                            <th scope="row">3</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                            <td>Mark</td>
-                            <td>Otto</td>
-
-                        </tr>
                     </tbody>
                 </table>
             </section>
@@ -156,6 +130,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+
+    <script src="JS/script.js"></script>
 </body>
 
 </html>
