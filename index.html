@@ -25,8 +25,8 @@
             <!-- Nome -->
             <form onsubmit="save(); return false;" id="formAlunos">
                 <div class="mb-3 row align-items-center">
-                    <label for="nome" class="col-md-1 col-form-label">Nome:</label>
-                    <div class="col-7">
+                    <label for="nome" class="col-md-2 col-form-label">Nome:</label>
+                    <div class="col">
                         <input type="text" class="form-control shadow-sm bg-body-tertiary" id="nome"
                             placeholder="Nome do Aluno" required>
                     </div>
@@ -34,15 +34,15 @@
 
                 <!-- Email -->
                 <div class="mb-3 row align-items-center">
-                    <label for="email" class="col-sm-1 col-form-label">Email:</label>
-                    <div class="col-4">
+                    <label for="email" class="col-sm-2 col-form-label">Email:</label>
+                    <div class="col">
                         <input type="email" class="form-control shadow-sm bg-body-tertiary" id="email"
                             placeholder="Email do Aluno" required>
                     </div>
 
                     <!-- Telefone -->
-                    <label for="telefone" class="col-sm-1 col-form-label">Telefone:</label>
-                    <div class="col-sm-2">
+                    <label for="telefone" class="col-sm-2 col-form-label">Telefone:</label>
+                    <div class="col">
                         <input type="tel" class="form-control shadow-sm bg-body-tertiary" id="telefone"
                             placeholder="Telefone do Aluno" required>
                     </div>
@@ -50,8 +50,8 @@
 
                 <!-- Cursos -->
                 <div class="mb-3 row align-items-center">
-                    <label for="curso" class="col-sm-1 col-form-label">Curso:</label>
-                    <div class="col-sm-7">
+                    <label for="curso" class="col-sm-2 col-form-label">Curso:</label>
+                    <div class="col">
                         <select class="form-select shadow-sm bg-body-tertiary" id="curso" required>
                             <option value="" selected required>Curso do Aluno</option>
                             <option value="Angular">Angular</option>
@@ -63,8 +63,8 @@
 
                 <!-- Turno -->
                 <fieldset class="mb-3 row" required>
-                    <legend class="col-form-label col-sm-1">Turno:</legend>
-                    <div class="col-sm text-start">
+                    <legend class="col-form-label col-sm-2">Turno:</legend>
+                    <div class="col text-start">
                         <div class="form-check">
                             <input class="form-check-input" type="radio" name="turno" id="manha" value="Manhã" required>
                             <label class="form-check-label" for="manha">
@@ -112,7 +112,7 @@
                             <th scope="col">Turno</th>
                         </tr>
                     </thead>
-                    <tbody>
+                    <tbody id="alunosTableBody">
 
                     </tbody>
                 </table>
