@@ -17,124 +17,133 @@
     </header>
 
     <main class="container-fluid col-11">
-        <div class="col-12">
-            <section class="container-fluid mt-3">
-                <!-- Título Section 1 -->
-                <div class="display-5 ms-3">
-                    Formulário de Cadastro:
-                </div>
-                <!-- Nome -->
-                <form class="container-fluid col-11 mt-4 text-center">
-                    <div class="mb-3 row align-items-center">
-                        <label for="nome" class="col-md-1 col-form-label">Nome:</label>
-                        <div class="col-7">
-                            <input type="text" class="form-control shadow-sm bg-body-tertiary" id="nome"
-                                placeholder="Digite seu nome" required>
-                        </div>
-                    </div>
-
-                    <!-- Email -->
-                    <div class="mb-3 row align-items-center">
-                        <label for="email" class="col-sm-1 col-form-label">Email:</label>
-                        <div class="col-4">
-                            <input type="email" class="form-control shadow-sm bg-body-tertiary" id="email"
-                                placeholder="Digite seu email" required>
-                        </div>
-
-                        <!-- Telefone -->
-                        <label for="telefone" class="col-sm-1 col-form-label">Telefone:</label>
-                        <div class="col-sm-2">
-                            <input type="tel" class="form-control shadow-sm bg-body-tertiary" id="telefone"
-                                placeholder="Digite seu telefone" required>
-                        </div>
-                    </div>
-
-                    <!-- Cursos -->
-                    <div class="mb-3 row align-items-center">
-                        <label for="curso" class="col-sm-1 col-form-label">Curso:</label>
-                        <div class="col-sm-7">
-                            <select class="form-select shadow-sm bg-body-tertiary" id="curso" required>
-                                <option value="" selected required>Selecione o curso</option>
-                                <option value="angular">Angular</option>
-                                <option value="java">Java</option>
-                                <option value="bootstrap">Bootstrap</option>
-                            </select>
-                        </div>
-                    </div>
-
-                    <!-- Turno -->
-                    <fieldset class="mb-3 row" required>
-                        <legend class="col-form-label col-sm-1">Turno:</legend>
-                        <div class="col-sm text-start">
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="turno" id="manha" value="manha"
-                                    required>
-                                <label class="form-check-label" for="manha">
-                                    Manhã
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="turno" id="tarde" value="tarde"
-                                    required>
-                                <label class="form-check-label" for="tarde">
-                                    Tarde
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="turno" id="noite" value="noite"
-                                    required>
-                                <label class="form-check-label" for="noite">
-                                    Noite
-                                </label>
-                            </div>
-                        </div>
-                    </fieldset>
-
-                    <div class="d-grid gap-2 col-6 mx-auto">
-                        <button type="submit" class="btn btn-primary">Enviar</button>
-                    </div>
-                </form>
-            </section>
-
-            <hr>
-
-
-            <div>
-                <section class="container-fluid">
-                    <!-- Título Section 2 -->
-                    <div class="display-5 ms-3">
-                        Formulário de Cadastro:
-                    </div>
-                    <table class="table text-center mt-3">
-                        <thead>
-                            <tr>
-                                <th scope="col">#</th>
-                                <th scope="col">Nome</th>
-                                <th scope="col">Email</th>
-                                <th scope="col">Telefone</th>
-                                <th scope="col">Curso</th>
-                                <th scope="col">Turno</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row">1</th>
-
-
-                            </tr>
-                            <tr>
-                                <th scope="row">2</th>
-
-
-                            </tr>
-                            <tr>
-                                <th scope="row">3</th>
-
-                            </tr>
-                        </tbody>
-                    </table>
-                </section>
+        <section class="container-fluid mt-3">
+            <!-- Título Section 1 -->
+            <div class="display-5 ms-3">
+                Formulário de Cadastro:
             </div>
+            <!-- Nome -->
+            <form class="container-fluid col-11 mt-4 text-center">
+                <div class="mb-3 row align-items-center">
+                    <label for="nome" class="col-md-1 col-form-label">Nome:</label>
+                    <div class="col-7">
+                        <input type="text" class="form-control shadow-sm bg-body-tertiary" id="nome"
+                            placeholder="Nome do Aluno" required>
+                    </div>
+                </div>
+
+                <!-- Email -->
+                <div class="mb-3 row align-items-center">
+                    <label for="email" class="col-sm-1 col-form-label">Email:</label>
+                    <div class="col-4">
+                        <input type="email" class="form-control shadow-sm bg-body-tertiary" id="email"
+                            placeholder="Email do Aluno" required>
+                    </div>
+
+                    <!-- Telefone -->
+                    <label for="telefone" class="col-sm-1 col-form-label">Telefone:</label>
+                    <div class="col-sm-2">
+                        <input type="tel" class="form-control shadow-sm bg-body-tertiary" id="telefone"
+                            placeholder="Telefone do Aluno" required>
+                    </div>
+                </div>
+
+                <!-- Cursos -->
+                <div class="mb-3 row align-items-center">
+                    <label for="curso" class="col-sm-1 col-form-label">Curso:</label>
+                    <div class="col-sm-7">
+                        <select class="form-select shadow-sm bg-body-tertiary" id="curso" required>
+                            <option value="" selected required>Curso do Aluno</option>
+                            <option value="angular">Angular</option>
+                            <option value="java">Java</option>
+                            <option value="bootstrap">Bootstrap</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Turno -->
+                <fieldset class="mb-3 row" required>
+                    <legend class="col-form-label col-sm-1">Turno:</legend>
+                    <div class="col-sm text-start">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="turno" id="manha" value="manha" required>
+                            <label class="form-check-label" for="manha">
+                                Manhã
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="turno" id="tarde" value="tarde" required>
+                            <label class="form-check-label" for="tarde">
+                                Tarde
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="turno" id="noite" value="noite" required>
+                            <label class="form-check-label" for="noite">
+                                Noite
+                            </label>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <div class="d-grid gap-2 col-6 mx-auto">
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </div>
+            </form>
+        </section>
+
+        <hr>
+
+
+        <div>
+            <section class="container-fluid">
+                <!-- Título Section 2 -->
+                <div class="display-5 mt-3 ms-4">
+                    Alunos Cadastrados:
+                </div>
+                <table class="table text-center mt-3">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Nome</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">Telefone</th>
+                            <th scope="col">Curso</th>
+                            <th scope="col">Turno</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                            <td>Mark</td>
+                            <td>Otto</td>
+
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                            <td>Mark</td>
+                            <td>Otto</td>
+
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                            <td>Mark</td>
+                            <td>Otto</td>
+
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
     </main>
 
     <footer class="fixed-bottom text-center mb-2 bg-secondary text-white">
