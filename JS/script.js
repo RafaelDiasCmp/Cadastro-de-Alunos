@@ -30,8 +30,26 @@ function addNewRow(aluno) {
     // Preenchendo as células com os valores do aluno
     newRow.insertCell().textContent = aluno.id;
     newRow.insertCell().textContent = aluno.nome;
-    newRow.insertCell().textContent = aluno.email;
-    newRow.insertCell().textContent = aluno.tel;
-    newRow.insertCell().textContent = aluno.curso;
-    newRow.insertCell().textContent = aluno.turno;
+
+    // Email
+    var cell = newRow.insertCell();
+    cell.textContent = aluno.email;
+    cell.className = "d-none d-md-table-cell";
+
+    // Telefone
+    var cell = newRow.insertCell();
+    cell.textContent = aluno.tel;
+    cell.className = "d-none d-md-table-cell";
+
+    //Curso
+    var cell = newRow.insertCell();
+    cell.textContent = aluno.curso;
+    cell.className = "d-none d-md-table-cell";
+    
+
+    //Turno
+    var cell = newRow.insertCell();
+    cell.textContent = aluno.turno;
+    cell.className = "d-none d-md-table-cell";
+
 }

@@ -19,12 +19,12 @@
     </header>
 
     <!-- Main Content -->
-    <main class="container-fluid col-11">
+    <main class="container col-md-10 mt-4">
         
         <!-- Formulário de Cadastro -->
-        <section class="container-fluid col-11 mt-4 text-center">
+        <section class="container mt-4 text-md-start text-center">
             
-            <div class="display-5 text-md-start text-center ms-md-3 mb-3">
+            <div class="display-5 mb-3">
                 Formulário de Cadastro:
             </div>
             
@@ -93,20 +93,20 @@
 
         <!-- Lista de Alunos Cadastrados -->
         <hr>
-        <section class="container-fluid col-11">
-            <div class="display-5 mt-3 ms-4">
+        <section>
+            <div class="display-5 mb-3">
                 Alunos Cadastrados:
             </div>
-            <div class="table-responsive">
-                <table class="table text-center mt-3">
+            <div class="col-md-10 offset-md-1">
+                <table class="table text-center mt-3 mb-5">
                     <thead>
                         <tr>
                             <th scope="col">#</th>
                             <th scope="col">Nome</th>
-                            <th scope="col">Email</th>
-                            <th scope="col">Telefone</th>
-                            <th scope="col">Curso</th>
-                            <th scope="col">Turno</th>
+                            <th scope="col" class="d-none d-md-table-cell">Email</th>
+                            <th scope="col" class="d-none d-md-table-cell">Telefone</th>
+                            <th scope="col" class="d-none d-md-table-cell">Curso</th>
+                            <th scope="col" class="d-none d-md-table-cell">Turno</th>
                         </tr>
                     </thead>
                     <tbody id="alunosTableBody">
@@ -118,7 +118,7 @@
     </main>
 
     <!-- Footer -->
-    <footer class="fixed-bottom text-center mb-2 bg-secondary text-white">
+    <footer class="fixed-bottom text-center bg-secondary text-white">
         @Sistemas P&D
     </footer>
 
